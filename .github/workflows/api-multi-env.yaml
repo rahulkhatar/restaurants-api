@@ -32,13 +32,13 @@ jobs:
         run: dotnet build --no-restore -c Release
 
       - name: Publish app
-        run: dotnet publish ./src/Revision_Part_1/Revision_Part_1.csproj -c Release -o publish/
+        run: dotnet publish ./src/Revision_Part_1/Revision_Part_1.csproj -o ${{env.DOTNET_ROOT}}/api --no-build
 
       - name: Upload artifact
         uses: actions/upload-artifact@v5.0.0
         with:
           name: Api-Artifact
-          path: publish/**
+          path: ${{env.DOTNET_ROOT}}/api
 
   deploy_dev:
     name: Deploy → Dev

@@ -51,6 +51,7 @@ jobs:
   deploy_dev:
     name: Deploy → Dev
     needs: build
+    if: startsWith(github.ref, 'refs/heads/develop/')
     runs-on: ubuntu-latest
     environment:
       name: Dev

@@ -10,7 +10,7 @@ namespace Revision_Part_1.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok("Yoo!");
+            return Ok("Yoo yoo!");
         }
     }
 }

@@ -71,7 +71,7 @@ jobs:
         with:
           app-name: 'restaurants-api-dev'
           publish-profile: ${{ secrets.PUBLISH_PROFILE_DEV }}
-          package: .
+          package: Api-Artifact/
 
   # ===============================
   # 3) DEPLOY → STAGE (release/*)

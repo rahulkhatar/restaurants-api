@@ -1,87 +1,121 @@
-name: restaurants-api-ci
+name: restaurants-api-ci-cd
+
 on:
   pull_request:
-    branches:
-    - master
-  workflow_dispatch:
+    branches: [ master ]
 
-  
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6.0.0
-        
-      - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v5.0.1
-        with:
-          dotnet-version: 8.0.x
-      
-      - name: Restore Dependencies
-        run: dotnet restore
-
-      - name: Build
-        run: dotnet build --no-restore
-
-      - name: Testing
-        run: dotnet test
-
-Second pipeline is 
-
-name: restaurants-api-cd
-on:
   push:
     branches:
-    - master
+      - master
+      - 'release/**'   # For stage deployment
+
   workflow_dispatch:
 
-  
 jobs:
+  # -----------------------------
+  # 1) BUILD JOB (single source of truth)
+  # -----------------------------
   build:
     runs-on: ubuntu-latest
+    outputs:
+      artifact_name: Api-Artifact
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6.0.0
-        
-      - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v5.0.1
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 8.0.x
-      
-      - name: Restore Dependencies
+
+      - name: Restore
         run: dotnet restore
 
       - name: Build
         run: dotnet build --no-restore -c Release
 
-     - name: Test
+      - name: Test
         run: dotnet test --no-build --verbosity normal
 
-      - name: Publishing
-        run: dotnet publish ./src/Revision_Part_1/Revision_Part_1.csproj -o ${{env.DOTNET_ROOT}}/api --no-build
+      - name: Publish
+        run: dotnet publish ./src/Revision_Part_1/Revision_Part_1.csproj -c Release -o publish/
 
-      - name: Upload a build artifact
-        uses: actions/upload-artifact@v5.0.0
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
         with:
           name: Api-Artifact
-          path: ${{env.DOTNET_ROOT}}/api
+          path: publish/
 
-  deploy-dev:
-    environment:
-      name: 'Dev'
-      url: ${{steps.deploy-to-webapp.outputs.webapp-url}}
+  # -------------------------------------
+  # 2) DEV DEPLOYMENT (automatic)
+  # -------------------------------------
+  deploy_dev:
+    needs: build
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
-    needs: Build
+    environment:
+      name: Dev
+      url: ${{ steps.deploy.outputs.webapp-url }}
+
     steps:
-      - name: Download a build artifact
-        uses: actions/download-artifact@v6.0.0
+      - name: Download artifact
+        uses: actions/download-artifact@v4
         with:
           name: Api-Artifact
 
-      - name: Azure Web App
-        uses: Azure/webapps-deploy@v2.2.17
-        id: deploy-to-webapp
+      - name: Deploy to Azure DEV
+        id: deploy
+        uses: azure/webapps-deploy@v2
         with:
           app-name: 'restaurants-api-dev'
-          publish-profile: ${{secrets.PUBLISH_PROFILE_DEV}}
+          publish-profile: ${{ secrets.PUBLISH_PROFILE_DEV }}
+          package: .
+
+  # -------------------------------------
+  # 3) STAGE DEPLOYMENT (selected branches only)
+  # -------------------------------------
+  deploy_stage:
+    needs: build
+    if: startsWith(github.ref, 'refs/heads/release/')
+    runs-on: ubuntu-latest
+    environment:
+      name: Stage
+      url: ${{ steps.deploy.outputs.webapp-url }}
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: Api-Artifact
+
+      - name: Deploy to Azure STAGE
+        id: deploy
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'restaurants-api-stage'
+          publish-profile: ${{ secrets.PUBLISH_PROFILE_STAGE }}
+          package: .
+
+  # -------------------------------------
+  # 4) PROD DEPLOYMENT (MANUAL ONLY)
+  # -------------------------------------
+  deploy_prod:
+    needs: deploy_stage
+    if: github.event_name == 'workflow_dispatch'   # Only manual trigger
+    runs-on: ubuntu-latest
+    environment:
+      name: Prod          # Protect Prod in GitHub environments
+      url: ${{ steps.deploy.outputs.webapp-url }}
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: Api-Artifact
+
+      - name: Deploy to Azure PROD
+        id: deploy
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'restaurants-api-prod'
+          publish-profile: ${{ secrets.PUBLISH_PROFILE_PROD }}
+          package: .

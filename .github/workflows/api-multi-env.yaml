@@ -43,7 +43,7 @@ jobs:
         uses: actions/upload-artifact@v5
         with:
           name: Api-Artifact
-          path: publish/
+          path: publish .
 
   # ===============================
   # 2) DEPLOY → DEV (develop branch)

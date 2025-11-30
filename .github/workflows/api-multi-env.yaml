@@ -7,124 +7,116 @@ on:
   push:
     branches:
       - develop
-      - 'release/**'
       - master
+      - 'release/**'   # For stage deployment
 
   workflow_dispatch:
 
 jobs:
-  # ===============================
-  # 1) BUILD JOB
-  # ===============================
+  # -----------------------------
+  # 1) BUILD JOB (single source of truth)
+  # -----------------------------
   build:
-    name: Build, Test & Publish
     runs-on: ubuntu-latest
     outputs:
       artifact_name: Api-Artifact
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v4
 
       - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v5
+        uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 8.0.x
 
-      - name: Restore dependencies
+      - name: Restore
         run: dotnet restore
 
       - name: Build
         run: dotnet build --no-restore -c Release
 
-      - name: Publish app
+      - name: Test
+        run: dotnet test --no-build --verbosity normal
+
+      - name: Publish
         run: dotnet publish ./src/Revision_Part_1/Revision_Part_1.csproj -c Release -o publish/
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v5
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
         with:
           name: Api-Artifact
           path: publish/
 
-  # ===============================
-  # 2) DEPLOY → DEV (develop branch)
-  # ===============================
+  # -------------------------------------
+  # 2) DEV DEPLOYMENT (automatic)
+  # -------------------------------------
   deploy_dev:
-    name: Deploy → Dev
     needs: build
-    if: startsWith(github.ref, 'refs/heads/develop/')
+    if: github.ref == 'refs/heads/develop'
     runs-on: ubuntu-latest
     environment:
       name: Dev
       url: ${{ steps.deploy.outputs.webapp-url }}
-      
+
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v4
         with:
           name: Api-Artifact
 
-      - name: Debug – Show folder structure
-        run: ls -R .
-
-      - name: Deploy to Azure Web App (Dev)
+      - name: Deploy to Azure DEV
+        id: deploy
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'restaurants-api-dev'
           publish-profile: ${{ secrets.PUBLISH_PROFILE_DEV }}
           package: .
 
-  # ===============================
-  # 3) DEPLOY → STAGE (release/*)
-  # ===============================
+  # -------------------------------------
+  # 3) STAGE DEPLOYMENT (selected branches only)
+  # -------------------------------------
   deploy_stage:
-    name: Deploy → Stage
     needs: build
     if: startsWith(github.ref, 'refs/heads/release/')
     runs-on: ubuntu-latest
     environment:
       name: Stage
       url: ${{ steps.deploy.outputs.webapp-url }}
-      
+
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v4
         with:
           name: Api-Artifact
 
-      - name: Debug – Show folder structure
-        run: ls -R .
-
-      - name: Deploy to Azure Web App (Stage)
+      - name: Deploy to Azure STAGE
+        id: deploy
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'restaurants-api-dev'
+          app-name: 'restaurants-api-stage'
           publish-profile: ${{ secrets.PUBLISH_PROFILE_STAGE }}
           package: .
 
-  # ===============================
-  # 4) DEPLOY → PROD (master)
-  # ===============================
+  # -------------------------------------
+  # 4) PROD DEPLOYMENT (MANUAL ONLY)
+  # -------------------------------------
   deploy_prod:
-    name: Deploy → Prod
-    needs: build
-    if: github.ref == 'refs/heads/master'
+    needs: deploy_stage
+    if: github.event_name == 'workflow_dispatch'   # Only manual trigger
     runs-on: ubuntu-latest
     environment:
-      name: Prod
+      name: Prod          # Protect Prod in GitHub environments
       url: ${{ steps.deploy.outputs.webapp-url }}
-      
+
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v4
         with:
           name: Api-Artifact
 
-      - name: Debug – Show folder structure
-        run: ls -R .
-
-      - name: Deploy to Azure Web App (Prod)
+      - name: Deploy to Azure PROD
+        id: deploy
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'restaurants-api-dev'
+          app-name: 'restaurants-api-prod'
           publish-profile: ${{ secrets.PUBLISH_PROFILE_PROD }}
           package: .

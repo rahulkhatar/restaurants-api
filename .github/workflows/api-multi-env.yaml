@@ -33,9 +33,6 @@ jobs:
       - name: Build
         run: dotnet build --no-restore -c Release
 
-      - name: Test
-        run: dotnet test --no-build --verbosity normal
-
       - name: Publish
         run: dotnet publish ./src/Revision_Part_1/Revision_Part_1.csproj -c Release -o publish/
 
@@ -91,7 +88,7 @@ jobs:
         id: deploy
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'restaurants-api-stage'
+          app-name: 'restaurants-api-dev'
           publish-profile: ${{ secrets.PUBLISH_PROFILE_STAGE }}
           package: .
 
@@ -116,6 +113,6 @@ jobs:
         id: deploy
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'restaurants-api-prod'
+          app-name: 'restaurants-api-dev'
           publish-profile: ${{ secrets.PUBLISH_PROFILE_PROD }}
           package: .

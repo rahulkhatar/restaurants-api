@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-artifact@v5
         with:
           name: Api-Artifact
-          path: publish/
+          path: publish .
 
   deploy_dev:
     name: Deploy → Dev

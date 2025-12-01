@@ -36,5 +36,11 @@ namespace Revision_Part_1.Controllers
         {
             return Ok("Four four four four four");
         }
+
+        [HttpGet("five")]
+        public IActionResult GetFive()
+        {
+            return Ok("Five five five five five");
+        }
     }
 }

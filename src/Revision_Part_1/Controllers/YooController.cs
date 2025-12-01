@@ -12,5 +12,11 @@ namespace Revision_Part_1.Controllers
         {
             return Ok("A bcdef ghi JK lMnOP choko poko Rahul!");
         }
+
+        [HttpGet("one")]
+        public IActionResult GetOne()
+        {
+            return Ok("One one one one one");
+        }
     }
 }

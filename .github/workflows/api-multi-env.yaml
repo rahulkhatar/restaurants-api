@@ -35,7 +35,7 @@ jobs:
         run: dotnet publish ./src/Revision_Part_1/Revision_Part_1.csproj -c Release -o publish/
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v5.0.0
+        uses: actions/upload-artifact@v5
         with:
           name: Api-Artifact
           path: publish/

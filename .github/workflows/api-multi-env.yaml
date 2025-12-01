@@ -3,6 +3,7 @@ name: restaurants-api-ci-cd
 on:
   pull_request:
     branches: [ master ]
+
   push:
     branches:
       - develop

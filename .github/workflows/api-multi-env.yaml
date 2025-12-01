@@ -84,7 +84,7 @@ jobs:
     name: Deploy → Prod (manual / protected)
     needs: build
     # This runs only on master push; to require manual run & approvals we guard with workflow_dispatch or environment approvals
-    if: github.ref == 'refs/heads/master'
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     environment:
       name: Prod

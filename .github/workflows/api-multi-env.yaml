@@ -47,6 +47,8 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: Dev
+      url: ${{ steps.deploy.outputs.webapp-url }}
+      
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v6
@@ -67,6 +69,8 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: Stage
+      url: ${{ steps.deploy.outputs.webapp-url }}
+      
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v6
@@ -88,6 +92,8 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: Prod
+      url: ${{ steps.deploy.outputs.webapp-url }}
+      
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v6

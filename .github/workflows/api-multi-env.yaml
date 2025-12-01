@@ -58,7 +58,7 @@ jobs:
         with:
           app-name: 'restaurants-api-dev'               # CHANGE
           publish-profile: ${{ secrets.PUBLISH_PROFILE_DEV }}
-          package: publish/
+          package: .
 
   deploy_stage:
     name: Deploy → Stage
@@ -78,7 +78,7 @@ jobs:
         with:
           app-name: 'restaurants-api-dev'             # CHANGE
           publish-profile: ${{ secrets.PUBLISH_PROFILE_STAGE }}
-          package: publish/
+          package: .
 
   deploy_prod:
     name: Deploy → Prod (manual / protected)
@@ -99,4 +99,4 @@ jobs:
         with:
           app-name: 'restaurants-api-dev'              # CHANGE
           publish-profile: ${{ secrets.PUBLISH_PROFILE_PROD }}
-          package: publish/
+          package: .

@@ -79,6 +79,7 @@ jobs:
           name: Api-Artifact
 
       - name: Deploy to Azure Web App (Stage)
+        id: deploy
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'restaurants-api-dev'             # CHANGE
@@ -102,6 +103,7 @@ jobs:
           name: Api-Artifact
 
       - name: Deploy to Azure Web App (Prod)
+        id: deploy
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'restaurants-api-dev'              # CHANGE

@@ -92,5 +92,14 @@ jobs:
           app-name: 'restaurants-api-dev'               # CHANGE
           publish-profile: ${{ secrets.PUBLISH_PROFILE_DEV }}
           package: .
-          app-settings: |
-            -SECRET_VALUE=${{ steps.kv.outputs.secretvalue }}
+
+      - name: Update App Settings (Dev)
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            az webapp config appsettings set \
+              --name restaurants-api-dev \
+              --resource-group YOUR_RESOURCE_GROUP \
+              --settings \
+                DbConnection=${{ steps.kv.outputs.dbconn }} \
+                ASPNETCORE_ENVIRONMENT=Development

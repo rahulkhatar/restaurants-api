@@ -40,7 +40,7 @@ namespace Revision_Part_1.Controllers
         [HttpGet("five")]
         public IActionResult GetFive()
         {
-            return Ok("Five five five five five!");
+            return Ok("Five five five five five");
         }
     }
 }

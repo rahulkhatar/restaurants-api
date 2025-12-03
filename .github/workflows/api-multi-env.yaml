@@ -65,12 +65,6 @@ jobs:
 #          secrets: |
 #            secretname
 
-      - name: Test access
-        run: |
-          az webapp show \
-            --name restaurants-api-dev \
-            --resource-group rg-restaurants-dev
-    
       - name: Fetch secret from Key Vault using Azure CLI
         id: kv
         uses: azure/cli@v2

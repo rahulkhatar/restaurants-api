@@ -58,12 +58,32 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Fetch secrets from Azure Key Vault
-        uses: azure/get-keyvault-secrets@v1
+#      - name: Fetch secrets from Azure Key Vault
+#        uses: azure/get-keyvault-secrets@v1
+#        with:
+#          keyvault: "KeyWalletEnv"
+#          secrets: |
+#            secretname
+
+      - name: Fetch secret from Key Vault using Azure CLI
+        id: kv
+        uses: azure/cli@v2
         with:
-          keyvault: "KeyWalletEnv"
-          secrets: |
-            secretname
+          inlineScript: |
+            SECRET_VALUE=$(az keyvault secret show \
+              --vault-name KeyWalletEnv \
+              --name secretname \
+              --query value -o tsv)
+            echo "secretvalue=$SECRET_VALUE" >> $GITHUB_OUTPUT
+
+      - name: Validate secret was loaded
+        run: |
+          if [ -z "${{ steps.kv.outputs.secretvalue }}" ]; then
+            echo "❌ Secret was not fetched!"
+            exit 1
+          else
+            echo "✅ Secret fetched successfully (value hidden)"
+          fi
           
       - name: Deploy to Azure Web App (Dev)
         id: deploy
@@ -72,3 +92,5 @@ jobs:
           app-name: 'restaurants-api-dev'               # CHANGE
           publish-profile: ${{ secrets.PUBLISH_PROFILE_DEV }}
           package: .
+          app-settings: |
+            -SECRET_VALUE=${{ steps.kv.outputs.secretvalue }}

@@ -1,4 +1,4 @@
-name: restaurants-api-ci-cd
+name: restaurants-api-ci
 
 on:
   push:

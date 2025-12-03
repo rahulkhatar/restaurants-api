@@ -99,7 +99,7 @@ jobs:
           inlineScript: |
             az webapp config appsettings set \
               --name restaurants-api-dev \
-              --resource-group YOUR_RESOURCE_GROUP \
+              --resource-group rg-restaurants-dev \
               --settings \
                 DbConnection=${{ steps.kv.outputs.dbconn }} \
                 ASPNETCORE_ENVIRONMENT=Development

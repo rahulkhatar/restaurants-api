@@ -53,10 +53,10 @@ jobs:
         with:
           name: Api-Artifact
 
-      - name: Login to Azure
-        uses: azure/login@v2
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+#      - name: Login to Azure
+#        uses: azure/login@v2
+#        with:
+#          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
 #      - name: Fetch secrets from Azure Key Vault
 #        uses: azure/get-keyvault-secrets@v1
@@ -65,6 +65,19 @@ jobs:
 #          secrets: |
 #            secretname
 
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Test access
+        run: |
+          az webapp show \
+            --name restaurants-api-dev \
+            --resource-group rg-restaurants-dev
+    
       - name: Fetch secret from Key Vault using Azure CLI
         id: kv
         uses: azure/cli@v2

@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v5
+        uses: azure/secrets-store@v1
         with:
           dotnet-version: 8.0.x
 

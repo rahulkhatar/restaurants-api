@@ -58,6 +58,25 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+      - name: Login to Docker Hub
+        run: |
+          echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+
+      - name: Pull API Image From Docker Hub
+        run: |
+          echo "Pulling image rahulk86/api-container:latest ..."
+          docker pull rahulk86/api-container:latest
+
+      - name: Validate Image Pulled
+        run: |
+          echo "Checking if image exists locally..."
+          if docker image inspect rahulk86/api-container:latest > /dev/null 2>&1; then
+            echo "✅ Image pulled successfully: rahulk86/api-container:latest"
+          else
+            echo "❌ Failed to pull image!"
+            exit 1
+          fi
+          
 #      - name: Fetch secrets from Azure Key Vault
 #        uses: azure/get-keyvault-secrets@v1
 #        with:

@@ -37,3 +37,26 @@ jobs:
         with:
           name: Api-Artifact
           path: publish/
+
+  deploy_dev:
+    name: Deploy → Dev
+    needs: build
+    if: github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-latest
+    environment:
+      name: Dev
+      url: ${{ steps.deploy.outputs.webapp-url }}
+      
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v6
+        with:
+          name: Api-Artifact
+
+      - name: Deploy to Azure Web App (Dev)
+        id: deploy
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'restaurants-api-dev'               # CHANGE
+          publish-profile: ${{ secrets.PUBLISH_PROFILE_DEV }}
+          package: .    

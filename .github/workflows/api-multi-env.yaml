@@ -57,26 +57,7 @@ jobs:
         uses: azure/login@v2
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - name: Login to Docker Hub
-        run: |
-          echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
-
-      - name: Pull API Image From Docker Hub
-        run: |
-          echo "Pulling image rahulk86/api-container:latest ..."
-          docker pull rahulk86/api-container:latest
-
-      - name: Validate Image Pulled
-        run: |
-          echo "Checking if image exists locally..."
-          if docker image inspect rahulk86/api-container:latest > /dev/null 2>&1; then
-            echo "✅ Image pulled successfully: rahulk86/api-container:latest"
-          else
-            echo "❌ Failed to pull image!"
-            exit 1
-          fi
-          
+    
 #      - name: Fetch secrets from Azure Key Vault
 #        uses: azure/get-keyvault-secrets@v1
 #        with:
@@ -100,15 +81,47 @@ jobs:
               --vault-name KeyWalletEnv \
               --name secretname \
               --query value -o tsv)
-            echo "secretvalue=$SECRET_VALUE" >> $GITHUB_OUTPUT
+            
+            DOCKER_USER=$(az keyvault secret show \
+              --vault-name KeyWalletEnv \
+              --name dockerHubUsername \
+              --query value -o tsv)
 
+            DOCKER_TOKEN=$(az keyvault secret show \
+              --vault-name KeyWalletEnv \
+              --name dockerHubToken \
+              --query value -o tsv)
+    
+            echo "secretvalue=$SECRET_VALUE" >> $GITHUB_OUTPUT
+            echo "dockerHubUsername=$DOCKER_USER" >> $GITHUB_OUTPUT
+            echo "dockerHubToken=$DOCKER_TOKEN" >> $GITHUB_OUTPUT
+            
       - name: Validate secret was loaded
         run: |
-          if [ -z "${{ steps.kv.outputs.secretvalue }}" ]; then
-            echo "❌ Secret was not fetched!"
+          if [ -z "${{ steps.kv.outputs.secretvalue }}" ] || [ -z "${{ steps.kv.outputs.dockerHubUsername }}" ] || [ -z "${{ steps.kv.outputs.dockerHubToken }}" ]; then
+            echo "❌ One of secrets was not fetched!"
             exit 1
           else
-            echo "✅ Secret fetched successfully (value hidden)"
+            echo "✅ Secrets fetched successfully (value hidden)"
+          fi
+
+      - name: Login to Docker Hub
+        run: |
+          echo "${{ steps.kv.outputs.dockerHubToken }}" | docker login -u "${{ steps.kv.outputs.dockerHubUsername }}" --password-stdin
+
+      - name: Pull API Image From Docker Hub
+        run: |
+          echo "Pulling image rahulk86/api-container:latest ..."
+          docker pull rahulk86/api-container:latest
+
+      - name: Validate Image Pulled
+        run: |
+          echo "Checking if image exists locally..."
+          if docker image inspect rahulk86/api-container:latest > /dev/null 2>&1; then
+            echo "✅ Image pulled successfully: rahulk86/api-container:latest"
+          else
+            echo "❌ Failed to pull image!"
+            exit 1
           fi
           
       - name: Deploy to Azure Web App (Dev)

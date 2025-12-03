@@ -1,4 +1,4 @@
-name: restaurants-api-cd
+name: restaurants-api-cd-deploy
 
 on:
   workflow_run:

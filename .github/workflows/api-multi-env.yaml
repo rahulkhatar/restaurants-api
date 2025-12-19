@@ -38,107 +38,107 @@ jobs:
           name: Api-Artifact
           path: publish/
 
-  deploy_dev:
-    name: Deploy → Dev
-    needs: build
-    if: github.ref == 'refs/heads/develop'
-    runs-on: ubuntu-latest
-    environment:
-      name: Dev
-      url: ${{ steps.deploy.outputs.webapp-url }}
+#  deploy_dev:
+#    name: Deploy → Dev
+#    needs: build
+#    if: github.ref == 'refs/heads/develop'
+#    runs-on: ubuntu-latest
+#    environment:
+#      name: Dev
+#      url: ${{ steps.deploy.outputs.webapp-url }}
       
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v6
-        with:
-          name: Api-Artifact
-
-      - name: Login to Azure
-        uses: azure/login@v2
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-    
-#      - name: Fetch secrets from Azure Key Vault
-#        uses: azure/get-keyvault-secrets@v1
+#    steps:
+#      - name: Download artifact
+#        uses: actions/download-artifact@v6
 #        with:
-#          keyvault: "KeyWalletEnv"
-#          secrets: |
-#            secretname
+#          name: Api-Artifact
 
-      - name: Test Azure Access
-        run: |
-          echo "Testing access to Web App..."
-            az webapp show \
-              --name restaurants-api-dev \
-              --resource-group rg-restaurants-dev
-      
-      - name: Fetch secret from Key Vault using Azure CLI
-        id: kv
-        uses: azure/cli@v2
-        with:
-          inlineScript: |
-            SECRET_VALUE=$(az keyvault secret show \
-              --vault-name KeyWalletEnv \
-              --name secretname \
-              --query value -o tsv)
-            
-            DOCKER_USER=$(az keyvault secret show \
-              --vault-name KeyWalletEnv \
-              --name dockerHubUsername \
-              --query value -o tsv)
-
-            DOCKER_TOKEN=$(az keyvault secret show \
-              --vault-name KeyWalletEnv \
-              --name dockerHubToken \
-              --query value -o tsv)
+#      - name: Login to Azure
+#        uses: azure/login@v2
+#        with:
+#          creds: ${{ secrets.AZURE_CREDENTIALS }}
     
-            echo "secretvalue=$SECRET_VALUE" >> $GITHUB_OUTPUT
-            echo "dockerHubUsername=$DOCKER_USER" >> $GITHUB_OUTPUT
-            echo "dockerHubToken=$DOCKER_TOKEN" >> $GITHUB_OUTPUT
+##      - name: Fetch secrets from Azure Key Vault
+##        uses: azure/get-keyvault-secrets@v1
+##        with:
+##          keyvault: "KeyWalletEnv"
+##          secrets: |
+##            secretname
+
+#      - name: Test Azure Access
+#        run: |
+#          echo "Testing access to Web App..."
+#            az webapp show \
+#              --name restaurants-api-dev \
+#              --resource-group rg-restaurants-dev
+      
+#      - name: Fetch secret from Key Vault using Azure CLI
+#        id: kv
+#        uses: azure/cli@v2
+#        with:
+#          inlineScript: |
+#            SECRET_VALUE=$(az keyvault secret show \
+#              --vault-name KeyWalletEnv \
+#              --name secretname \
+#              --query value -o tsv)
             
-      - name: Validate secret was loaded
-        run: |
-          if [ -z "${{ steps.kv.outputs.secretvalue }}" ] || [ -z "${{ steps.kv.outputs.dockerHubUsername }}" ] || [ -z "${{ steps.kv.outputs.dockerHubToken }}" ]; then
-            echo "❌ One of secrets was not fetched!"
-            exit 1
-          else
-            echo "✅ Secrets fetched successfully (value hidden)"
-          fi
+#            DOCKER_USER=$(az keyvault secret show \
+#              --vault-name KeyWalletEnv \
+#              --name dockerHubUsername \
+#              --query value -o tsv)
 
-      - name: Login to Docker Hub
-        run: |
-          echo "${{ steps.kv.outputs.dockerHubToken }}" | docker login -u "${{ steps.kv.outputs.dockerHubUsername }}" --password-stdin
+#            DOCKER_TOKEN=$(az keyvault secret show \
+#              --vault-name KeyWalletEnv \
+#              --name dockerHubToken \
+#              --query value -o tsv)
+    
+#            echo "secretvalue=$SECRET_VALUE" >> $GITHUB_OUTPUT
+#            echo "dockerHubUsername=$DOCKER_USER" >> $GITHUB_OUTPUT
+#            echo "dockerHubToken=$DOCKER_TOKEN" >> $GITHUB_OUTPUT
+            
+#      - name: Validate secret was loaded
+#        run: |
+#          if [ -z "${{ steps.kv.outputs.secretvalue }}" ] || [ -z "${{ steps.kv.outputs.dockerHubUsername }}" ] || [ -z "${{ steps.kv.outputs.dockerHubToken }}" ]; then
+#            echo "❌ One of secrets was not fetched!"
+#            exit 1
+#          else
+#            echo "✅ Secrets fetched successfully (value hidden)"
+#          fi
 
-      - name: Pull API Image From Docker Hub
-        run: |
-          echo "Pulling image rahulk86/api-container:latest ..."
-          docker pull rahulk86/api-container:latest
+#      - name: Login to Docker Hub
+#        run: |
+#          echo "${{ steps.kv.outputs.dockerHubToken }}" | docker login -u "${{ steps.kv.outputs.dockerHubUsername }}" --password-stdin
 
-      - name: Validate Image Pulled
-        run: |
-          echo "Checking if image exists locally..."
-          if docker image inspect rahulk86/api-container:latest > /dev/null 2>&1; then
-            echo "✅ Image pulled successfully: rahulk86/api-container:latest"
-          else
-            echo "❌ Failed to pull image!"
-            exit 1
-          fi
+#      - name: Pull API Image From Docker Hub
+#        run: |
+#          echo "Pulling image rahulk86/api-container:latest ..."
+#          docker pull rahulk86/api-container:latest
+
+#      - name: Validate Image Pulled
+#        run: |
+#          echo "Checking if image exists locally..."
+#          if docker image inspect rahulk86/api-container:latest > /dev/null 2>&1; then
+#            echo "✅ Image pulled successfully: rahulk86/api-container:latest"
+#          else
+#            echo "❌ Failed to pull image!"
+#            exit 1
+#          fi
           
-      - name: Deploy to Azure Web App (Dev)
-        id: deploy
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'restaurants-api-dev'               # CHANGE
-          publish-profile: ${{ secrets.PUBLISH_PROFILE_DEV }}
-          package: .
+#      - name: Deploy to Azure Web App (Dev)
+#        id: deploy
+#        uses: azure/webapps-deploy@v2
+#        with:
+#          app-name: 'restaurants-api-dev'               # CHANGE
+#          publish-profile: ${{ secrets.PUBLISH_PROFILE_DEV }}
+#          package: .
 
-      - name: Update App Settings (Dev)
-        uses: azure/cli@v2
-        with:
-          inlineScript: |
-            az webapp config appsettings set \
-              --name restaurants-api-dev \
-              --resource-group rg-restaurants-dev \
-              --settings \
-                DbConnection=${{ steps.kv.outputs.dbconn }} \
-                ASPNETCORE_ENVIRONMENT=Development
+#      - name: Update App Settings (Dev)
+#        uses: azure/cli@v2
+#        with:
+#          inlineScript: |
+#            az webapp config appsettings set \
+#              --name restaurants-api-dev \
+#              --resource-group rg-restaurants-dev \
+#              --settings \
+#                DbConnection=${{ steps.kv.outputs.dbconn }} \
+#                ASPNETCORE_ENVIRONMENT=Development

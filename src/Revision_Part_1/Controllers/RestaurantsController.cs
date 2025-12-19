@@ -39,6 +39,7 @@ namespace Revision_Part_1.Controllers;
         int id = await _additionalRestaurantService.CreateRestaurant(createRestaurantDto);
         return CreatedAtAction(nameof(GetById), new { id = id }, null);
     }
+    Comment 1
 }*/
 public class RestaurantsController(IMediator _additionalRestaurantService) : ControllerBase
 {

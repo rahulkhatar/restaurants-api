@@ -15,7 +15,7 @@ namespace Integration.Tests;
 
 public class RestaurantControllerTests : IClassFixture<WebApplicationFactory<Program>>
 {
-    /*private readonly WebApplicationFactory<Program> _factory;
+    private readonly WebApplicationFactory<Program> _factory;
     private readonly Mock<IRestaurantService> _restaurantService = new();
     public RestaurantControllerTests(WebApplicationFactory<Program> factory) 
     {
@@ -99,5 +99,5 @@ public class RestaurantControllerTests : IClassFixture<WebApplicationFactory<Pro
         restaurantDto.Name.Should().Be("Test");
         restaurantDto.Description.Should().Be("Test Description");
 
-    }*/
+    }
 }

@@ -1,0 +1,339 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.14.0.0",
+        "fileVersion": "4.14.0-3.25465.8 (b0a9adbf)",
+        "semanticVersion": "4.14.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S3261",
+          "level": "warning",
+          "message": "Remove this empty namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/rahul/Desktop/API_Tasks/DotNetCore_8/Revision_Part_1_Github/src/Revision_Part_1.Application/Services/RestaurantServiceAdditionalLayer.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/rahul/Desktop/API_Tasks/DotNetCore_8/Revision_Part_1_Github/src/Revision_Part_1.Application/CQRS/Commands/UpdateRestaurantCommand.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/rahul/Desktop/API_Tasks/DotNetCore_8/Revision_Part_1_Github/src/Revision_Part_1.Application/CQRS/Commands/UpdateRestaurantCommand.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 9,
+                  "endLine": 57,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/rahul/Desktop/API_Tasks/DotNetCore_8/Revision_Part_1_Github/src/Revision_Part_1.Application/CQRS/Commands/UploadRestaurantLogoCommand.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 9,
+                  "endLine": 31,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/rahul/Desktop/API_Tasks/DotNetCore_8/Revision_Part_1_Github/src/Revision_Part_1.Application/Extensions/ServiceCollectionExtension.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 9,
+                  "endLine": 15,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/rahul/Desktop/API_Tasks/DotNetCore_8/Revision_Part_1_Github/src/Revision_Part_1.Application/Services/RestaurantServiceAdditionalLayer.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 1,
+                  "endLine": 8,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/rahul/Desktop/API_Tasks/DotNetCore_8/Revision_Part_1_Github/src/Revision_Part_1.Application/Validators/CreateRestaurantValidation.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 9,
+                  "endLine": 14,
+                  "endColumn": 98
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'cancellation' to 'cancellationToken' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/rahul/Desktop/API_Tasks/DotNetCore_8/Revision_Part_1_Github/src/Revision_Part_1.Application/CQRS/Queries/GetRestaurantByIdQuery.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 95,
+                  "endLine": 20,
+                  "endColumn": 107
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'cancellation' to 'cancellationToken' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/rahul/Desktop/API_Tasks/DotNetCore_8/Revision_Part_1_Github/src/Revision_Part_1.Application/CQRS/Queries/GetAllRestaurantQuery.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 107,
+                  "endLine": 15,
+                  "endColumn": 119
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'cancellation' to 'cancellationToken' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/rahul/Desktop/API_Tasks/DotNetCore_8/Revision_Part_1_Github/src/Revision_Part_1.Application/CQRS/Commands/CreateRestaurantCommand.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 86,
+                  "endLine": 17,
+                  "endColumn": 98
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'cancellation' to 'cancellationToken' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/rahul/Desktop/API_Tasks/DotNetCore_8/Revision_Part_1_Github/src/Revision_Part_1.Application/CQRS/Commands/DeleteRestaurantCommand.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 87,
+                  "endLine": 17,
+                  "endColumn": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6580",
+          "level": "warning",
+          "message": "Use a format provider when parsing date and time.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/rahul/Desktop/API_Tasks/DotNetCore_8/Revision_Part_1_Github/src/Revision_Part_1.Application/User/UserContext.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 71,
+                  "endLine": 23,
+                  "endColumn": 123
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Commented-out code distracts the focus from the actual executed code. It creates a noise that increases maintenance code. And because it is never executed, it quickly becomes out of date and invalid.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3261": {
+          "id": "S3261",
+          "shortDescription": "Namespaces should not be empty",
+          "fullDescription": "Namespaces with no lines of code clutter a project and should be removed.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3261",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6580": {
+          "id": "S6580",
+          "shortDescription": "Use a format provider when parsing date and time",
+          "fullDescription": "When converting a string representation of a date and time to a DateTime object or any other temporal type with one of the available system parsing methods, you should always provide an IFormatProvider parameter.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6580",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S927": {
+          "id": "S927",
+          "shortDescription": "Parameter names should match base declaration and other partial definitions",
+          "fullDescription": "Parameters are part of the method signature and its identity.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

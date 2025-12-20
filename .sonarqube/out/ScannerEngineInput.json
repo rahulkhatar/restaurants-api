@@ -1,0 +1,308 @@
+{
+  "scannerProperties": [
+    {
+      "key": "sonar.scanner.app",
+      "value": "ScannerMSBuild"
+    },
+    {
+      "key": "sonar.scanner.appVersion",
+      "value": "11.0"
+    },
+    {
+      "key": "sonar.scanner.bootstrapStartTime",
+      "value": "1766216050000"
+    },
+    {
+      "key": "sonar.projectKey",
+      "value": "LearnSonarQube"
+    },
+    {
+      "key": "sonar.working.directory",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\.sonar"
+    },
+    {
+      "key": "sonar.projectBaseDir",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github"
+    },
+    {
+      "key": "sonar.pullrequest.cache.basepath",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github"
+    },
+    {
+      "key": "sonar.sources",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.vs\\VSWorkspaceState.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.github\\workflows\\api-multi-env.yaml,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\Integration.Tests\\obj\\Integration.Tests.csproj.nuget.dgspec.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\Integration.Tests\\obj\\project.assets.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\Revision_Part_1\\obj\\project.assets.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\Revision_Part_1\\obj\\Revision_Part_1.csproj.nuget.dgspec.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\Revision_Part_1.Application\\obj\\project.assets.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\Revision_Part_1.Application\\obj\\Revision_Part_1.Application.csproj.nuget.dgspec.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\Revision_Part_1.Domain\\obj\\project.assets.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\Revision_Part_1.Domain\\obj\\Revision_Part_1.Domain.csproj.nuget.dgspec.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\Revision_Part_1.Infrastructure\\obj\\project.assets.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\Revision_Part_1.Infrastructure\\obj\\Revision_Part_1.Infrastructure.csproj.nuget.dgspec.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\Unit.Tests\\obj\\project.assets.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\Unit.Tests\\obj\\Unit.Tests.csproj.nuget.dgspec.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.vs\\Revision_Part_1\\config\\applicationhost.config,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.vs\\Revision_Part_1\\v17\\DocumentLayout.backup.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.vs\\Revision_Part_1\\v17\\DocumentLayout.json"
+    },
+    {
+      "key": "sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "sonar.modules",
+      "value": "325D5FF3-CF0A-0945-AF25-24FCE0BC107E,D09C6AAE-0EA0-F57F-1B21-B1C1836A0FD8,D28DF7BE-1B6C-DBF8-2D2D-09EDF78B34BE,C585ED6B-1226-CA07-C7E3-A15B10395EA7,F61F85B9-C1F0-5621-477F-8827F1669691,5F56B349-1D77-2FF8-F339-A0A20E6DEC4A"
+    },
+    {
+      "key": "325D5FF3-CF0A-0945-AF25-24FCE0BC107E.sonar.projectKey",
+      "value": "LearnSonarQube:325D5FF3-CF0A-0945-AF25-24FCE0BC107E"
+    },
+    {
+      "key": "325D5FF3-CF0A-0945-AF25-24FCE0BC107E.sonar.projectName",
+      "value": "Revision_Part_1.Domain"
+    },
+    {
+      "key": "325D5FF3-CF0A-0945-AF25-24FCE0BC107E.sonar.projectBaseDir",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain"
+    },
+    {
+      "key": "325D5FF3-CF0A-0945-AF25-24FCE0BC107E.sonar.working.directory",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\.sonar\\mod0"
+    },
+    {
+      "key": "325D5FF3-CF0A-0945-AF25-24FCE0BC107E.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "325D5FF3-CF0A-0945-AF25-24FCE0BC107E.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "325D5FF3-CF0A-0945-AF25-24FCE0BC107E.sonar.sources",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\Entities\\ResourceOperation.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\Entities\\RestaurantClasses.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\Entities\\User.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\Exceptions\\ForbiddenAccessException.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\Exceptions\\NotFoundException.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\Interfaces\\IBlobStorageService.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\Interfaces\\IDishService.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\Interfaces\\IRestaurantAuthorizationService.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\Interfaces\\IRestaurantService.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\obj\\project.assets.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\obj\\Revision_Part_1.Domain.csproj.nuget.dgspec.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\bin\\Debug\\net8.0\\Revision_Part_1.Domain.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\bin\\Release\\net8.0\\Revision_Part_1.Domain.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Domain\\obj\\Debug\\net8.0\\Revision_Part_1.Domain.sourcelink.json"
+    },
+    {
+      "key": "325D5FF3-CF0A-0945-AF25-24FCE0BC107E.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\0,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\6"
+    },
+    {
+      "key": "325D5FF3-CF0A-0945-AF25-24FCE0BC107E.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\0\\Issues.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\6\\Issues.json"
+    },
+    {
+      "key": "325D5FF3-CF0A-0945-AF25-24FCE0BC107E.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\0\\Telemetry.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\6\\Telemetry.json"
+    },
+    {
+      "key": "D09C6AAE-0EA0-F57F-1B21-B1C1836A0FD8.sonar.projectKey",
+      "value": "LearnSonarQube:D09C6AAE-0EA0-F57F-1B21-B1C1836A0FD8"
+    },
+    {
+      "key": "D09C6AAE-0EA0-F57F-1B21-B1C1836A0FD8.sonar.projectName",
+      "value": "Revision_Part_1.Application"
+    },
+    {
+      "key": "D09C6AAE-0EA0-F57F-1B21-B1C1836A0FD8.sonar.projectBaseDir",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application"
+    },
+    {
+      "key": "D09C6AAE-0EA0-F57F-1B21-B1C1836A0FD8.sonar.working.directory",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\.sonar\\mod1"
+    },
+    {
+      "key": "D09C6AAE-0EA0-F57F-1B21-B1C1836A0FD8.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "D09C6AAE-0EA0-F57F-1B21-B1C1836A0FD8.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "D09C6AAE-0EA0-F57F-1B21-B1C1836A0FD8.sonar.sources",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\obj\\project.assets.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\obj\\Revision_Part_1.Application.csproj.nuget.dgspec.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\bin\\Debug\\net8.0\\Revision_Part_1.Application.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\bin\\Release\\net8.0\\Revision_Part_1.Application.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\obj\\Debug\\net8.0\\Revision_Part_1.Application.sourcelink.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Commands\\AssignUserRoleCommand.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Commands\\CreateDishCommand.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Commands\\CreateRestaurantCommand.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Commands\\DeleteDishesCommand.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Commands\\DeleteRestaurantCommand.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Commands\\UnassignUserRoleCommand.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Commands\\UpdateDishCommand.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Commands\\UpdateRestaurantCommand.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Commands\\UpdateUserDetailCommand.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Commands\\UploadRestaurantLogoCommand.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Queries\\GetAllDishQuery.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Queries\\GetAllRestaurantQuery.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Queries\\GetDishByIdQuery.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\CQRS\\Queries\\GetRestaurantByIdQuery.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\DTOs\\CreateDishDto.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\DTOs\\CreateRestaurantDto.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\DTOs\\DishDto.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\DTOs\\RestaurantDto.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\Extensions\\ServiceCollectionExtension.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\Interfaces\\IUserContext.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\MappingProfile.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\Services\\RestaurantServiceAdditionalLayer.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\User\\Current.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\User\\UserContext.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Application\\Validators\\CreateRestaurantValidation.cs"
+    },
+    {
+      "key": "D09C6AAE-0EA0-F57F-1B21-B1C1836A0FD8.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\1,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\7"
+    },
+    {
+      "key": "D09C6AAE-0EA0-F57F-1B21-B1C1836A0FD8.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\1\\Issues.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\7\\Issues.json"
+    },
+    {
+      "key": "D09C6AAE-0EA0-F57F-1B21-B1C1836A0FD8.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\1\\Telemetry.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\7\\Telemetry.json"
+    },
+    {
+      "key": "D28DF7BE-1B6C-DBF8-2D2D-09EDF78B34BE.sonar.projectKey",
+      "value": "LearnSonarQube:D28DF7BE-1B6C-DBF8-2D2D-09EDF78B34BE"
+    },
+    {
+      "key": "D28DF7BE-1B6C-DBF8-2D2D-09EDF78B34BE.sonar.projectName",
+      "value": "Unit.Tests"
+    },
+    {
+      "key": "D28DF7BE-1B6C-DBF8-2D2D-09EDF78B34BE.sonar.projectBaseDir",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests"
+    },
+    {
+      "key": "D28DF7BE-1B6C-DBF8-2D2D-09EDF78B34BE.sonar.working.directory",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\.sonar\\mod2"
+    },
+    {
+      "key": "D28DF7BE-1B6C-DBF8-2D2D-09EDF78B34BE.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "D28DF7BE-1B6C-DBF8-2D2D-09EDF78B34BE.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "D28DF7BE-1B6C-DBF8-2D2D-09EDF78B34BE.sonar.sources",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\obj\\project.assets.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\obj\\Unit.Tests.csproj.nuget.dgspec.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\bin\\Debug\\net8.0\\appsettings.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\bin\\Debug\\net8.0\\Revision_Part_1.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\bin\\Debug\\net8.0\\Revision_Part_1.runtimeconfig.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\bin\\Debug\\net8.0\\Revision_Part_1.staticwebassets.endpoints.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\bin\\Debug\\net8.0\\Unit.Tests.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\bin\\Debug\\net8.0\\Unit.Tests.runtimeconfig.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\obj\\Debug\\net8.0\\Unit.Tests.sourcelink.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\CQRS\\Handlers\\CreateRestaurantCommandHandlerTests.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\CQRS\\Handlers\\UpdateRestaurantCommandHandlerTests.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\MappingProfile\\MappingProfileTests.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\Middlewares\\CreateMultipleRestaurantRequirementHandlerTests.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\Middlewares\\ExceptionHandlingTests.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\Users\\CurrentUserTests.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\Users\\UserContextTests.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\Validators\\CreateRestarantValidatorTests.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Unit.Tests\\CQRS\\Handlers\\AdditionalTest.txt"
+    },
+    {
+      "key": "D28DF7BE-1B6C-DBF8-2D2D-09EDF78B34BE.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\10,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\4"
+    },
+    {
+      "key": "D28DF7BE-1B6C-DBF8-2D2D-09EDF78B34BE.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\10\\Issues.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\4\\Issues.json"
+    },
+    {
+      "key": "D28DF7BE-1B6C-DBF8-2D2D-09EDF78B34BE.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\10\\Telemetry.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\4\\Telemetry.json"
+    },
+    {
+      "key": "C585ED6B-1226-CA07-C7E3-A15B10395EA7.sonar.projectKey",
+      "value": "LearnSonarQube:C585ED6B-1226-CA07-C7E3-A15B10395EA7"
+    },
+    {
+      "key": "C585ED6B-1226-CA07-C7E3-A15B10395EA7.sonar.projectName",
+      "value": "Integration.Tests"
+    },
+    {
+      "key": "C585ED6B-1226-CA07-C7E3-A15B10395EA7.sonar.projectBaseDir",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests"
+    },
+    {
+      "key": "C585ED6B-1226-CA07-C7E3-A15B10395EA7.sonar.working.directory",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\.sonar\\mod3"
+    },
+    {
+      "key": "C585ED6B-1226-CA07-C7E3-A15B10395EA7.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "C585ED6B-1226-CA07-C7E3-A15B10395EA7.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "C585ED6B-1226-CA07-C7E3-A15B10395EA7.sonar.sources",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\obj\\Integration.Tests.csproj.nuget.dgspec.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\obj\\project.assets.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\bin\\Debug\\net8.0\\appsettings.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\bin\\Debug\\net8.0\\Integration.Tests.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\bin\\Debug\\net8.0\\Integration.Tests.runtimeconfig.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\bin\\Debug\\net8.0\\MvcTestingAppManifest.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\bin\\Debug\\net8.0\\Revision_Part_1.Application.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\bin\\Debug\\net8.0\\Revision_Part_1.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\bin\\Debug\\net8.0\\Revision_Part_1.Domain.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\bin\\Debug\\net8.0\\Revision_Part_1.Infrastructure.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\bin\\Debug\\net8.0\\Revision_Part_1.runtimeconfig.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\bin\\Debug\\net8.0\\Revision_Part_1.staticwebassets.endpoints.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\obj\\Debug\\net8.0\\Integration.Tests.sourcelink.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\obj\\Debug\\net8.0\\MvcTestingAppManifest.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\FakePolicyEvaluator.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\tests\\Integration.Tests\\RestaurantControllerTests.cs"
+    },
+    {
+      "key": "C585ED6B-1226-CA07-C7E3-A15B10395EA7.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\11,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\5"
+    },
+    {
+      "key": "C585ED6B-1226-CA07-C7E3-A15B10395EA7.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\11\\Issues.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\5\\Issues.json"
+    },
+    {
+      "key": "C585ED6B-1226-CA07-C7E3-A15B10395EA7.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\11\\Telemetry.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\5\\Telemetry.json"
+    },
+    {
+      "key": "F61F85B9-C1F0-5621-477F-8827F1669691.sonar.projectKey",
+      "value": "LearnSonarQube:F61F85B9-C1F0-5621-477F-8827F1669691"
+    },
+    {
+      "key": "F61F85B9-C1F0-5621-477F-8827F1669691.sonar.projectName",
+      "value": "Revision_Part_1.Infrastructure"
+    },
+    {
+      "key": "F61F85B9-C1F0-5621-477F-8827F1669691.sonar.projectBaseDir",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure"
+    },
+    {
+      "key": "F61F85B9-C1F0-5621-477F-8827F1669691.sonar.working.directory",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\.sonar\\mod4"
+    },
+    {
+      "key": "F61F85B9-C1F0-5621-477F-8827F1669691.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "F61F85B9-C1F0-5621-477F-8827F1669691.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "F61F85B9-C1F0-5621-477F-8827F1669691.sonar.sources",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\obj\\project.assets.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\obj\\Revision_Part_1.Infrastructure.csproj.nuget.dgspec.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\bin\\Debug\\net8.0\\Revision_Part_1.Infrastructure.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\bin\\Debug\\net8.0\\Revision_Part_1.Infrastructure.runtimeconfig.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\bin\\Release\\net8.0\\Revision_Part_1.Infrastructure.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\bin\\Release\\net8.0\\Revision_Part_1.Infrastructure.runtimeconfig.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\obj\\Debug\\net8.0\\Revision_Part_1.Infrastructure.sourcelink.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\assembly.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Authorization\\CreatedMultipleRestaurantsRequirement.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Authorization\\CreatedMultipleRestaurantsRequirementHandler.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Authorization\\MinimumAgeRequirement.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Authorization\\MinimumAgeRequirementHandler.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Authorization\\RestaurantsUserClaimsPrincipalFactory.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Constants\\PolicyNames.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Constants\\ResourceOperation.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Extensions\\ServiceCollectionExtension.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Helper\\BlobStorageSettings.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251120134039_AddTablesToDb.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251120134039_AddTablesToDb.Designer.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251120134504_AddTablesToDbUpdate.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251120134504_AddTablesToDbUpdate.Designer.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251121040326_ModifyDishEntityKiloCalories.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251121040326_ModifyDishEntityKiloCalories.Designer.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251123041457_IdentityTablesToDb.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251123041457_IdentityTablesToDb.Designer.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251123055330_ModifiedIdentityPropertiesUser.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251123055330_ModifiedIdentityPropertiesUser.Designer.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251124023321_LinkedUserToRestaurant.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251124023321_LinkedUserToRestaurant.Designer.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251127065630_AddLogoUrlToDb.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\20251127065630_AddLogoUrlToDb.Designer.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Migrations\\RestaurentsDbContextModelSnapshot.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Persistence\\RestaurentsDbContext.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Repositories\\BlobStorageService.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Repositories\\DishServiceRepository.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Repositories\\RestaurantAuthorizationService.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Repositories\\RestaurantServiceRepository.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Seeders\\IRestaurantSeeder.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1.Infrastructure\\Seeders\\RestaurantSeeder.cs"
+    },
+    {
+      "key": "F61F85B9-C1F0-5621-477F-8827F1669691.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\2,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\8"
+    },
+    {
+      "key": "F61F85B9-C1F0-5621-477F-8827F1669691.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\2\\Issues.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\8\\Issues.json"
+    },
+    {
+      "key": "F61F85B9-C1F0-5621-477F-8827F1669691.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\2\\Telemetry.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\8\\Telemetry.json"
+    },
+    {
+      "key": "5F56B349-1D77-2FF8-F339-A0A20E6DEC4A.sonar.projectKey",
+      "value": "LearnSonarQube:5F56B349-1D77-2FF8-F339-A0A20E6DEC4A"
+    },
+    {
+      "key": "5F56B349-1D77-2FF8-F339-A0A20E6DEC4A.sonar.projectName",
+      "value": "Revision_Part_1"
+    },
+    {
+      "key": "5F56B349-1D77-2FF8-F339-A0A20E6DEC4A.sonar.projectBaseDir",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1"
+    },
+    {
+      "key": "5F56B349-1D77-2FF8-F339-A0A20E6DEC4A.sonar.working.directory",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\.sonar\\mod5"
+    },
+    {
+      "key": "5F56B349-1D77-2FF8-F339-A0A20E6DEC4A.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "5F56B349-1D77-2FF8-F339-A0A20E6DEC4A.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "5F56B349-1D77-2FF8-F339-A0A20E6DEC4A.sonar.sources",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\appsettings.Development.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\appsettings.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\project.assets.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Revision_Part_1.csproj.nuget.dgspec.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Properties\\launchSettings.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\bin\\Debug\\net8.0\\appsettings.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\bin\\Debug\\net8.0\\Revision_Part_1.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\bin\\Debug\\net8.0\\Revision_Part_1.runtimeconfig.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\bin\\Debug\\net8.0\\Revision_Part_1.staticwebassets.endpoints.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\bin\\Release\\net8.0\\appsettings.Development.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\bin\\Release\\net8.0\\appsettings.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\bin\\Release\\net8.0\\Revision_Part_1.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\bin\\Release\\net8.0\\Revision_Part_1.runtimeconfig.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\bin\\Release\\net8.0\\Revision_Part_1.staticwebassets.endpoints.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Debug\\net8.0\\ApiEndpoints.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Debug\\net8.0\\Revision_Part_1.sourcelink.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Debug\\net8.0\\rjsmcshtml.dswa.cache.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Debug\\net8.0\\rjsmrazor.dswa.cache.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Debug\\net8.0\\rpswa.dswa.cache.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Debug\\net8.0\\staticwebassets.build.endpoints.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Debug\\net8.0\\staticwebassets.build.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\Revision_Part_1.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\rjsmcshtml.dswa.cache.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\rjsmrazor.dswa.cache.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\rpswa.dswa.cache.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\staticwebassets.build.endpoints.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\staticwebassets.build.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\staticwebassets.publish.endpoints.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\staticwebassets.publish.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Debug\\net8.0\\EndpointInfo\\Revision_Part_1.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\PubTmp\\Out\\appsettings.Development.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\PubTmp\\Out\\appsettings.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\PubTmp\\Out\\Revision_Part_1.deps.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\PubTmp\\Out\\Revision_Part_1.runtimeconfig.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\PubTmp\\Out\\Revision_Part_1.staticwebassets.endpoints.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Release\\net8.0\\PubTmp\\Out\\web.config,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Controllers\\DishesController.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Controllers\\IdentityController.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Controllers\\RestaurantsController.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Controllers\\YooController.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Extensions\\WebApplicationBuilderExtension.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Middlewares\\ExceptionHandling.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Middlewares\\RequestTimeLogging.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Program.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Debug\\net8.0\\Revision_Part_1.GlobalUsings.g.cs,\"C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs\",C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Debug\\net8.0\\Revision_Part_1.AssemblyInfo.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\obj\\Debug\\net8.0\\Revision_Part_1.MvcApplicationPartsAssemblyInfo.cs,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Logs\\Restaurant-API-20251127.log,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Logs\\Restaurant-API-20251128.log,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Logs\\Restaurant-API-20251129.log,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Logs\\Restaurant-API-20251219.log,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Logs\\Restaurant-API-20251220.log,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Revision_Part_1.http,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Properties\\PublishProfiles\\restaurants-api-dev - FTP.pubxml,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Properties\\PublishProfiles\\restaurants-api-dev - Web Deploy.pubxml,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\src\\Revision_Part_1\\Properties\\PublishProfiles\\restaurants-api-dev - Zip Deploy.pubxml"
+    },
+    {
+      "key": "5F56B349-1D77-2FF8-F339-A0A20E6DEC4A.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\3,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\9"
+    },
+    {
+      "key": "5F56B349-1D77-2FF8-F339-A0A20E6DEC4A.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\3\\Issues.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\9\\Issues.json"
+    },
+    {
+      "key": "5F56B349-1D77-2FF8-F339-A0A20E6DEC4A.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\3\\Telemetry.json,C:\\Users\\rahul\\Desktop\\API_Tasks\\DotNetCore_8\\Revision_Part_1_Github\\.sonarqube\\out\\9\\Telemetry.json"
+    },
+    {
+      "key": "sonar.token",
+      "value": "***"
+    },
+    {
+      "key": "sonar.host.url",
+      "value": "http://localhost:9000"
+    },
+    {
+      "key": "sonar.cs.vscoveragexml.reportsPaths",
+      "value": "coverage.xml"
+    },
+    {
+      "key": "sonar.coverage.exclusions",
+      "value": "tests/**"
+    },
+    {
+      "key": "sonar.exclusions",
+      "value": "coverage.xml"
+    },
+    {
+      "key": "sonar.visualstudio.enable",
+      "value": "false"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+﻿C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\src\Revision_Part_1.Domain\Entities\ResourceOperation.cs
+C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\src\Revision_Part_1.Domain\Entities\RestaurantClasses.cs
+C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\src\Revision_Part_1.Domain\Entities\User.cs
+C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\src\Revision_Part_1.Domain\Exceptions\ForbiddenAccessException.cs
+C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\src\Revision_Part_1.Domain\Exceptions\NotFoundException.cs
+C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\src\Revision_Part_1.Domain\Interfaces\IBlobStorageService.cs
+C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\src\Revision_Part_1.Domain\Interfaces\IDishService.cs
+C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\src\Revision_Part_1.Domain\Interfaces\IRestaurantAuthorizationService.cs
+C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\src\Revision_Part_1.Domain\Interfaces\IRestaurantService.cs

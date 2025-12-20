@@ -1,0 +1,6 @@
+projectKey=LearnSonarQube
+serverUrl=http://localhost:9000
+serverVersion=25.12.0.117093
+dashboardUrl=http://localhost:9000/dashboard?id=LearnSonarQube
+ceTaskId=8eddffd4-22db-40ff-a7aa-6f1c2fd7760a
+ceTaskUrl=http://localhost:9000/api/ce/task?id=8eddffd4-22db-40ff-a7aa-6f1c2fd7760a

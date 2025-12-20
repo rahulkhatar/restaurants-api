@@ -11,13 +11,10 @@ public class MappingProfileTests
     private readonly IMapper _mapper;
     public MappingProfileTests()
     {
-        var configuration = new MapperConfiguration(cfg =>
+        _mapper = new MapperConfiguration(cfg =>
         {
             cfg.AddProfile<Revision_Part_1.Application.MappingProfile>();
-        });
-
-        _mapper = configuration.CreateMapper();
-
+        }).CreateMapper();
     }
 
     [Fact()]
@@ -59,13 +56,6 @@ public class MappingProfileTests
     public void CreateMap_ForRestaurantCommandToRestaurant_Maps()
     {
         //Arrange
-        var configuration = new MapperConfiguration(cfg =>
-        {
-            cfg.AddProfile<Revision_Part_1.Application.MappingProfile>();
-        });
-
-        var mapper = configuration.CreateMapper();
-
         var command = new CreateRestaurantCommand()
         {
             CreateRestaurantDto = new CreateRestaurantDto

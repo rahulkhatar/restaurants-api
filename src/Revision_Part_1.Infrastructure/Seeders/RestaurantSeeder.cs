@@ -15,7 +15,7 @@ public class RestaurantSeeder(RestaurentsDbContext dbContext) : IRestaurantSeede
         }
         if (await dbContext.Database.CanConnectAsync())
         {
-            if (!dbContext.Restaurants.Any())
+            if (!await dbContext.Restaurants.AnyAsync())
             {
                 var restaurants = GetRestaurants();
                 dbContext.Restaurants.AddRange(restaurants);

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>Unit.Tests</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>d28df7be-1b6c-dbf8-2d2d-09edf78b34be</ProjectGuid>
+  <FullPath>C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\tests\Unit.Tests\Unit.Tests.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResultFiles>
+    <AnalysisResultFile Id="FilesToAnalyze" Location="C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\.sonarqube\conf\4\FilesToAnalyze.txt" />
+  </AnalysisResultFiles>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\.sonarqube\out\4\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\.sonarqube\out\4</Property>
+    <Property Name="sonar.cs.scanner.telemetry">C:\Users\rahul\Desktop\API_Tasks\DotNetCore_8\Revision_Part_1_Github\.sonarqube\out\4\Telemetry.json</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net8.0</TargetFramework>
+</ProjectInfo>

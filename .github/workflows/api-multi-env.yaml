@@ -38,8 +38,8 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         run: |
           dotnet sonarscanner begin \
-            /k:"GithubWorkflow" \
-            /n:"Restaurants API" \
+            /k:"github-workflow" \
+            /n:"GithubWorkflow" \
             /v:"${{ github.run_number }}" \
             /d:sonar.host.url="${SONAR_HOST_URL}" \
             /d:sonar.login="${SONAR_TOKEN}" \

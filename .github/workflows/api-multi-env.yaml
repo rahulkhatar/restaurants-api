@@ -6,6 +6,8 @@ on:
       - develop
       - 'release/**'
       - master
+      - sonarqube-branch
+      
   workflow_dispatch:
 
 jobs:
@@ -14,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       artifact: Api-Artifact
+      
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -26,6 +29,36 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
+      - name: Install SonarScanner
+        run: dotnet tool install --global dotnet-sonarscanner
+
+      - name: SonarQube Begin
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        run: |
+          dotnet sonarscanner begin \
+            /k:"restaurants-api" \
+            /n:"Restaurants API" \
+            /v:"${{ github.run_number }}" \
+            /d:sonar.host.url="${SONAR_HOST_URL}" \
+            /d:sonar.login="${SONAR_TOKEN}" \
+            /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml"
+
+      - name: Test with Coverage
+        env:
+          ASPNETCORE_ENVIRONMENT: Development
+        run: |
+          dotnet test \
+            /p:CollectCoverage=true \
+            /p:CoverletOutputFormat=opencover \
+            /p:CoverletOutput=coverage.opencover.xml
+
+      - name: SonarQube End
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: dotnet sonarscanner end /d:sonar.login="${SONAR_TOKEN}"
+      
       - name: Build
         run: dotnet build --no-restore -c Release
 

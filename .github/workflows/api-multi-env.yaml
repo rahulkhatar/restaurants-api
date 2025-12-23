@@ -35,18 +35,19 @@ jobs:
       - name: SonarQube Begin
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          # SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         run: |
           dotnet sonarscanner begin \
             /k:"restaurants-api" \
-            /o:"rahulkhatar" \
             /n:"Restaurants API" \
             /v:"${{ github.run_number }}" \
-            /d:sonar.host.url="https://sonarcloud.io" \
+            /d:sonar.host.url="${SONAR_HOST_URL}" \
             /d:sonar.login="${SONAR_TOKEN}" \
             /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml"
 
       - name: Test with Coverage
+        env:
+          ASPNETCORE_ENVIRONMENT: Development
         run: |
           dotnet test \
             /p:CollectCoverage=true \

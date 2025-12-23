@@ -41,7 +41,7 @@ jobs:
             /k:"GithubWorkflow" \
             /n:"Restaurants API" \
             /v:"${{ github.run_number }}" \
-            /d:sonar.host.url="http://localhost:9000" \
+            /d:sonar.host.url="${SONAR_HOST_URL}" \
             /d:sonar.login="${SONAR_TOKEN}" \
             /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml"
 

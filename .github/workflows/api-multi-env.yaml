@@ -35,10 +35,11 @@ jobs:
       - name: SonarQube Begin
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          # SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         run: |
           dotnet sonarscanner begin \
             /k:"restaurants-api" \
+            /o:"rahulkhatar" \
             /n:"Restaurants API" \
             /v:"${{ github.run_number }}" \
             /d:sonar.host.url="https://sonarcloud.io" \
